@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #b71c1c; /* წითელი ფონი */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Cursive', serif;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #fdd835; /* ოქროსფერი ღილაკი */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #fbc02d;
+    transform: scale(1.1);
+}
+
+#photoContainer {
+    margin-top: 20px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#photoContainer.hidden {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#photoContainer img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 1.2em;
+    font-style: italic;
+}
